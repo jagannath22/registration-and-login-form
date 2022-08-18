@@ -1,0 +1,258 @@
+{{!-- {{>navbar}}
+<h1>Thank you</h1> --}}
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    :root {
+        --navbar-height: 100px;
+    }
+     
+     /*navbar section*/
+
+    .nav {
+        width: 1540px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+
+    }
+
+    .nav::before {
+        background-color: rgb(17, 9, 106);
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+
+    .img {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background-color: black;
+        padding: 0px;
+    }
+
+    .img1 {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        padding: 10px;
+    }
+
+    .img:hover {
+        cursor: pointer;
+        background-color: bisque;
+    }
+
+    .b {
+        width: 100%;
+        padding: 10px 200px 10px 200px;
+        text-align: center;
+    }
+
+    .box {
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .box ul li {
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+    .box ul li a{
+        text-decoration: none;
+         color: antiquewhite;
+    }
+    .box ul li a:hover {
+        cursor: pointer;
+        color: aqua;
+    }
+
+    /*home section*/
+
+    .home {
+        width: 1520px;
+    }
+
+    .home1 {
+        padding: 10px;
+        height: 400px;
+        background: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1560&h=450&dpr=1') no-repeat center center/cover;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.89;
+    }
+
+    .w {
+        text-align: center;
+        padding: 50px;
+        font-size: 2rem;
+        color: bisque;
+    }
+
+    .w1 {
+        text-align: center;
+        font-size: 1.3rem;
+        color: rgb(60, 83, 83);
+    }
+
+    .w2 {
+        text-align: center;
+        font-size: 1.1rem;
+        color: rgb(60, 83, 83);
+    }
+   
+      /*services section*/
+      
+    .sec {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .sec h1 {
+        padding: 15px;
+        width: 1520px;
+        color: rgb(122, 12, 241);
+        font-size: 2rem;
+    }
+
+    .di {
+        display: inline-flex;
+        width: 1520px;
+    }
+
+    .box1 {
+        width: 33%;
+        padding: 15px;
+        height: 370px;
+
+    }
+
+    #bo1 {
+        background-color: aqua;
+        border-radius: 20px;
+    }
+
+    #bo2 {
+        background-color: aquamarine;
+        border-radius: 20px;
+    }
+
+    #bo3 {
+        background-color: rgb(200, 0, 255);
+        border-radius: 20px;
+    }
+
+    .h {
+        font-size: 1.5rem;
+        text-align: center;
+        color: blue;
+        padding: 10px;
+    }
+
+    .para {
+        text-align: center;
+        padding: 4px;
+    }
+
+      /*contact section*/
+
+    .contact {
+        width: 1520px;
+        padding: 10px;
+    }
+
+
+    .con1 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 10px;
+        color: rgb(122, 12, 241);
+    }
+
+    .con2 {
+        display: inline-flex;
+        width: 1520px;
+    }
+
+    .co1 {
+        display: inline-block;
+        width: 49%;
+        height: 250px;
+        padding: 17px;
+
+    }
+   
+
+    #cont1 {
+        background-color: beige;
+    }
+
+    #cont2 {
+        background-color: rgb(197, 197, 137);
+    }
+     
+     /*about section*/
+
+    .about {
+        text-align: center;
+        width: 1520px;
+        padding: 10px;
+    }
+
+    .about h1 {
+        width: 1520px;
+        color: rgb(122, 12, 241);
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .about1 {
+        width: 99%;
+        height: 270px;
+        background-color: rgb(170, 241, 241);
+        padding: 8px;
+    }
+
+    .about1 p a {
+        text-decoration: none;
+        color: blue;
+        font-size: 1.1rem;
+    }
+    
+        /*footer section*/
+
+    .center {
+        width: 1520px;
+        text-align: center;
+        background-color: blue;
+        color: white;
+    }
+
+    footer {
+        padding: 5px;
+    }
+</style>
+{{>home1}}

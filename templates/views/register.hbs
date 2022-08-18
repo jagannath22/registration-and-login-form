@@ -1,0 +1,224 @@
+<style>
+    html {
+        overflow: hidden;
+    }
+
+    .bo {
+        width: 100%;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .box {
+        height: 350px;
+        width: 750px;
+        padding: 25px 15px 25px 15px;
+        border: 2px solid blue;
+        display: inline-block;
+        background-color: blue;
+    }
+
+    .box0 {
+        display: inline-block;
+        padding: 10px;
+        margin: -15px;
+    }
+
+    .box1 {
+        display: -webkit-inline-box;
+        position: relative;
+        top: -250px;
+        height: 325px;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .box2 {
+        height: 350px;
+        width: 500px;
+        /* padding: 10px; */
+        border: 2px solid blue;
+        display: inline-block;
+        border-radius: 60px 0px 0px 60px;
+        background-color: rgb(244, 244, 248);
+    }
+
+    .te {
+        display: inline-block;
+        font-size: 2rem;
+    }
+
+    .re {
+        display: block;
+        padding: 15px;
+        text-align: right;
+
+    }
+
+    .reg {
+        padding: 7px 0px;
+        display: inline-block;
+        border: 2px solid blue;
+        border-radius: 17px;
+        background-color: blue;
+    }
+
+    .regi {
+        display: inline;
+        padding: 6px 30px;
+        width: 20px;
+    }
+
+    #ab {
+        border-radius: 20px;
+        background-color: blue;
+
+    }
+
+    .regi a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #ab:hover {
+        cursor: pointer;
+        background-color: white;
+    }
+
+    #ab a:hover {
+        color: black;
+    }
+
+    #ba:hover {
+        cursor: pointer;
+        background-color: white;
+    }
+
+    #ba a:hover {
+        color: black;
+    }
+
+    #ba {
+        border-radius: 20px;
+        background-color: blue;
+    }
+
+    .text {
+        font-size: 1.4rem;
+    }
+
+    .inp {
+        padding: 30px;
+    }
+
+    .tex {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .tx {
+        padding: 4px;
+    }
+
+    .fo1 {
+        width: 400px;
+    }
+
+    .fo2 {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .num {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .pass {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .bt {
+        padding: 0px;
+        margin: 5px;
+        width: 400px;
+        text-align: right;
+    }
+
+    .button {
+        background-color: blue;
+            color: white;
+            border-radius: 10px;
+            padding: 5px 15px;
+            width: 100px;
+    }
+    /*button a{
+        color: white;
+    }*/
+
+    .button:hover {
+        cursor: pointer;
+        color: black;
+        background-color: rgb(229, 229, 233);
+    }
+     /*button a:hover {
+            cursor: pointer;
+            color: black;
+            background-color: rgb(229, 229, 233);
+        }*/
+    /*button a{
+        text-decoration: none;
+    } */
+</style>
+
+{{>navbar}}
+{{!-- <h1>welcome to my page!</h1> --}}
+<div class="bo">
+    <div class="box">
+        <div class="box0">
+            <div class="box1">
+                <div class="te">
+                    <p>Welcome</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="re">
+                    <div class="reg">
+                        <div class="regi" id="ab"><a href="/register">Registration</a></div>
+                        <div class="regi" id="ba"><a href="/">Login</a></div>
+                    </div>
+                </div>
+                <div class="text">Employee Registration Form</div>
+                <div class="inp">
+                    <form action="/register" method="POST">
+                        <div class="fo">
+                            <input type="text" class="tex" placeholder="First Name *" value="" name="First">
+                            <input type="text" class="tex" placeholder="Last Name *" value="" name="Last">
+                        </div>
+                        <div class="fo1">
+                            <div class="fo2">
+                                <input type="email" placeholder="Email *" class="tx" value="" name="Email">
+                            </div>
+                            <div class="fo2">
+                                <input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female
+                            </div>
+                        </div>
+                        <div class="fo3">
+                            <input type="number" placeholder="Phone No" class="num" value="" name="number">
+                            <input type="number" placeholder="Age *" class="num" value="" name="age">
+                        </div>
+                        <div class="fo4">
+                            <input type="password" placeholder="Password" class="pass" name="password" value="">
+                            <input type="password" name="confirmpassword" placeholder="confirmpassword" class="pass" value="">
+                        </div>
+                        <div class="bt">
+                            <input type="submit" value="Register" class="button">
+                    </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

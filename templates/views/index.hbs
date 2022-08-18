@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            overflow: hidden;
+        }
+
+        .bo {
+            width: 100%;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            height: 350px;
+            width: 750px;
+            padding: 25px 15px 25px 15px;
+            border: 2px solid blue;
+            display: inline-block;
+            background-color: blue;
+        }
+
+        .box0 {
+            display: inline-block;
+            padding: 10px;
+            margin: -15px;
+        }
+
+        .box1 {
+            display: -webkit-inline-box;
+            position: relative;
+            top: -250px;
+            height: 325px;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .box2 {
+            height: 350px;
+            width: 500px;
+            /* padding: 10px; */
+            border: 2px solid blue;
+            display: inline-block;
+            border-radius: 60px 0px 0px 60px;
+            background-color: rgb(244, 244, 248);
+        }
+
+        .te {
+            display: inline-block;
+            font-size: 2rem;
+        }
+
+        .re {
+            display: block;
+            padding: 15px;
+            text-align: right;
+
+        }
+
+        .reg {
+            padding: 7px 0px;
+            display: inline-block;
+            border: 2px solid blue;
+            border-radius: 17px;
+            background-color: blue;
+        }
+
+        .regi {
+            display: inline;
+            padding: 6px 30px;
+            width: 20px;
+        }
+
+        #ab {
+            border-radius: 20px;
+            background-color: blue;
+
+        }
+
+        .regi a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #ab:hover {
+            cursor: pointer;
+            background-color: white;
+        }
+
+        #ab a:hover {
+            color: black;
+        }
+
+        #ba:hover {
+            cursor: pointer;
+            background-color: white;
+        }
+
+        #ba a:hover {
+            color: black;
+        }
+
+        #ba {
+            border-radius: 20px;
+            background-color: blue;
+        }
+
+        .text {
+            font-size: 1.4rem;
+        }
+
+        .inp {
+            padding: 30px;
+        }
+
+        .tx {
+            padding: 4px;
+            width: 270px;
+        }
+
+        .pass {
+            padding: 5px;
+            margin: 5px;
+            width: 270px;
+        }
+
+        .bt {
+            padding: 17px;
+            margin: 5px;
+            width: 340px;
+            text-align: right;
+        }
+
+        .button {
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            padding: 5px 15px;
+            width: 100px;
+        }
+         .button:hover {
+            cursor: pointer;
+            color: black;
+            background-color: rgb(229, 229, 233);
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    {{!-- <h1>welcome to my page!</h1> --}}
+    <div class="bo">
+        <div class="box">
+            <div class="box0">
+                <div class="box1">
+                    <div class="te">
+                        <p>Welcome</p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="re">
+                        <div class="reg">
+                            <div class="regi" id="ab"><a href="/register">Registration</a></div>
+                            <div class="regi" id="ba"><a href="/">Login</a></div>
+                        </div>
+                    </div>
+                    <div class="text">Employee Login Form</div>
+                    <div class="inp">
+                        <form action="/" method="POST">
+                            <div class="fo1">
+                                <div class="tx">Enter your Email</div>
+                                <input type="Email" placeholder="Email" class="tx" name="Email" required>
+                            </div>
+                            <div class="fo4">
+                                <div class="pass">Enter Your Password</div>
+                                <input type="password" placeholder="Password" class="pass" name="password" required>
+                            </div>
+                            <div class="bt">
+                            <input type="submit" value="Login" class="button">
+                    </div>
+                        </form>
+                    </div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
